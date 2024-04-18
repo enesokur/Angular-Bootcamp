@@ -1,0 +1,11 @@
+<div class="card card-body" *ngIf="list">
+        <div *ngIf="list.length > 0; else elseBlock">
+            <li *ngFor="let item of list">{{item.name}}</li>
+        </div>
+        <ng-template #elseBlock>
+            no content
+        </ng-template>
+</div>
+   
+
+

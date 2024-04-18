@@ -1,0 +1,11 @@
+<div *ngFor="let item of brandList; let i = index">
+    <button (click)="listModels(i)" class="btn btn-primary" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExample' + i" aria-expanded="false" aria-controls="collapseExample">
+        {{item.name}}
+    </button>
+      
+    <div class="collapse" id="collapseExample{{i}}">
+        <app-models-list [list]="modelList[i]"></app-models-list>
+    </div>
+</div>
+
+

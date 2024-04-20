@@ -31,7 +31,7 @@ export class BrandListComponent implements OnInit{
   }
 
   listModels(id : number): void{
-    this.modelsApiService.getListForBrandId(id).subscribe((response) => {
+    this.modelsApiService.getListForBrandId(id+1).subscribe((response) => {
       this.modelList[id] = response;
       this.change.markForCheck();
     });

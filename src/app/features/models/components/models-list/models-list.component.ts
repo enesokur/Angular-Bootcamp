@@ -12,5 +12,4 @@ import { ModelListItemDto } from '../../models/model-list-item-dto';
 })
 export class ModelsListComponent{
   @Input() list : ModelListItemDto[] = [];
-  @Input() isLoading : boolean = false;
 }
